@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadona</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="headers">
+            <h1>Bem vindo a Calculadona!</h1>
+            <h3>(Esta é a calculadora doida da neeko)</h3>
+        </div>
+
+        <img src="img/neeko doida.gif" alt="Neeko doida">
+        <div class="container">
+            <form class="calculadora" name="calc">
+                <input type="text" class="value" name="txt">
+                <span class="num clear" onclick="calc.txt.value= ''">c</span>
+                <span class="num" onclick="document.calc.txt.value += '/'">/</span>
+                <span class="num" onclick="document.calc.txt.value += '*'">*</span>
+                <span class="num" onclick="document.calc.txt.value += '7'">7</span>
+                <span class="num" onclick="document.calc.txt.value += '8'">8</span>
+                <span class="num" onclick="document.calc.txt.value += '9'">9</span>
+                <span class="num" onclick="document.calc.txt.value += '-'">-</span>
+                <span class="num" onclick="document.calc.txt.value += '4'">4</span>
+                <span class="num" onclick="document.calc.txt.value += '5'">5</span>
+                <span class="num" onclick="document.calc.txt.value += '6'">6</span>
+                <span class="num plus" onclick="document.calc.txt.value += '+'">+</span>
+                <span class="num" onclick="document.calc.txt.value += '1'">1</span>
+                <span class="num" onclick="document.calc.txt.value += '2'">2</span>
+                <span class="num" onclick="document.calc.txt.value += '3'">3</span>
+                <span class="num" onclick="document.calc.txt.value += '0'">0</span>
+                <span class="num" onclick="document.calc.txt.value += '00'">00</span>
+                <span class="num" onclick="document.calc.txt.value += '.'">.</span>
+                <span class="num equal" onclick="document.calc.txt.value= eval(calc.txt.value)">=</span>
+            </form>
+        </div>
+        <footer>
+
+            <p>&copy; 2024 AnaTorchia. Todos os direitos reservados.</p>
+
+        </footer>
+</body>
+
+
+
+</html>
+
+<!-- </div>
+
+
+
+    <form>
+        <label for="number">Faça seu NEKKOcalculo </label>
+
+
+        </select>
+
+        <form id="myForm"> 
+:<br>
+            <input type="text" id="num1" name="num1">
+            <br>
+            Número 2:<br>
+            <input type="text" id="num2" name="num2">
+            <br><br>
+            <input type="button" value="Soma" onclick="calculate('soma')">
+            <input type="button" value="Subtração" onclick="calculate('subtracao')">
+            <input type="button" value="Multiplicação" onclick="calculate('multiplicacao')">
+            <input type="button" value="Divisão" onclick="calculate('divisao')">
+        </form> 
+
+ <p id="resultado"></p>
+
+        <script>
+            function calculate(operation) {
+                var num1 = document.getElementById('num1').value;
+                var num2 = document.getElementById('num2').value;
+                var result;
+
+                switch (operation) {
+                    case 'soma':
+                        result = parseInt(num1) + parseInt(num2);
+                        break;
+                    case 'subtracao':
+                        result = num1 - num2;
+                        break;
+                    case 'multiplicacao':
+                        result = num1 * num2;
+                        break;
+                    case 'divisao':
+                        if (num2 != 0) {
+                            result = num1 / num2;
+                        } else {
+                            result = "Erro! Divisão por zero.";
+                        }
+                        break;
+                    default:
+                        result = "Operação inválida.";
+                }
+
+                document.getElementById('resultado').innerHTML = "Resultado: " + result;
+            }
+        </script>
+        -->
+
+</body>
+
+</html>
